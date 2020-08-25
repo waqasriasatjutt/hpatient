@@ -1,0 +1,26 @@
+<odoo>
+
+    <!--Report for hotel folio -->
+    <report id="report_patient_card"
+            string="Patient Card"
+            model="hospital.patient"
+            report_type="qweb-pdf"
+            file="webtask.report_patient"
+            name="webtask.report_patient"></report>
+
+       <report
+        id="report_appointment"
+        string="Appointment"
+        model="hospital.appointment"
+        report_type="qweb-pdf"
+        name="webtask.appointment_report"
+        file="webtask.appointment_report"/>
+
+    <report
+        id="report_patient_card_xlx"
+        string="Patient Card Excel"
+        model="hospital.patient"
+        report_type="xlsx"
+        name="webtask.report_patient_xls"
+        file="webtask.report_patient_xls"/>
+</odoo>
